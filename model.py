@@ -8,6 +8,18 @@ import chainlit as cl
 
 DB_FAISS_PATH = 'vectorstore/db_faiss'
 
+'''
+custom_prompt_template = """Vedi se kot učitelj. Uporabi naslednjo informacijo, da odgovoriš na vprašanje uporabnika.
+Če odgovora ne poznaš, samo reci, da ne veš, ne poskušaj izmisliti odgovora in ne dodajaj ničesar drugega.
+
+Context: {context}
+Question: {question}
+
+Vrneš samo koristen odgovor spodaj in nič drugega.
+Koriten odgovor:
+"""
+'''
+
 custom_prompt_template = """Use the following pieces of information to answer the user's question.
 If you don't know the answer, just say that you don't know, don't try to make up an answer.
 
